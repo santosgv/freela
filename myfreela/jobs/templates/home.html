@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block 'head' %}
+		<link rel="stylesheet" href="{% static 'jobs/css/encontrar_jobs.css' %}">
+    <link rel="stylesheet" href="{% static 'jobs/css/home.css' %}">
+{% endblock %}
+
+{% block 'body' %}
+<h2>Cadastre em nossa plataforma e recebe as melhores oportunidades</h2>
+<a href="{% url 'cadastro' %}"> Cadastro</a>
+<br>
+Caso ja possua conta com acesse a mesma e confira as oportunidades
+<br>
+<a href="{% url 'logar' %}"> Logar</a>
+{% endblock %}
